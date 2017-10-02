@@ -20,8 +20,8 @@ public class homeController extends AbstractDao {
     
 	@RequestMapping()
 	public String home(ModelMap mm) {
-		//cbmanufacture cb =  cbservice.getCB(1);
-		cbmanufacture cb  = new cbmanufacture();
+		cbmanufacture cb =  cbservice.getCB(1);
+		//cbmanufacture cb  = new cbmanufacture();
 		mm.addAttribute("doam",cb.getDoAm());
 		mm.addAttribute("nhietdo",cb.getNhietDo());
 		mm.addAttribute("dieukhien",cb.getDieuKhien());
